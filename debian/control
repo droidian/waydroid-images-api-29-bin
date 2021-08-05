@@ -1,0 +1,26 @@
+Source: waydroid-images-api-29-bin
+Maintainer: Giuseppe Corti (r3vn) <giuseppe.corti@protonmail.com>
+Section: misc
+Priority: optional
+Build-Depends: debhelper (>= 13),
+               curl,
+               unzip
+Standards-Version: 4.5.0.3
+Vcs-Browser: https://github.com/droidian/waydroid-images-gsi-29-bin
+Vcs-Git: https://github.com/droidian/waydroid-images-gsi-29-bin.git
+
+Package: waydroid-system-29
+Architecture: any
+Depends: ${misc:Depends}
+Provides: waydroid-system-image
+Description: Waydroid System Image - gsi-29
+ This package provides a working Android system image for
+ Waydroid.
+
+Package: waydroid-vendor-29
+Architecture: any
+Depends: ${misc:Depends}
+Provides: waydroid-vendor-image
+Description: Waydroid Vendor Image - gsi-29
+ This package provides a working Android vendor image for
+ Waydroid.
