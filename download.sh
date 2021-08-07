@@ -35,6 +35,6 @@ DOWNLOAD_URL="https://build.lolinet.com/file/lineage/anbox_${ARCH}/latest-raw-im
 rm -rf downloaded_artifacts
 mkdir -p downloaded_artifacts
 
-curl -o latest-raw-images.zip "${DOWNLOAD_URL}"
+wget "${DOWNLOAD_URL}"
 unzip latest-raw-images.zip -d "${PWD}/downloaded_artifacts"
 rm -rf latest-raw-images.zip
