@@ -1,2 +1,1 @@
-downloaded_artifacts/anbox_*_vendor.img /var/lib/lxc/waydroid
 downloaded_artifacts/halium9/vendor.img /usr/share/waydroid-extra/images
