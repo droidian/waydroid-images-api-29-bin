@@ -148,6 +148,7 @@ def debian_package_build(suite, architecture, full_build=True, extra_repos=[], h
 					},
 				],
 				"commands" : [
+					"git submodule update --init --recursive",
 					"releng-build-package",
 					"find /drone -type f -maxdepth 1 -exec mv {} /buildd \\\;",
 				],
