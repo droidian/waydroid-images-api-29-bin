@@ -24,3 +24,11 @@ Provides: waydroid-vendor-image
 Description: Waydroid Vendor Image - gsi-29
  This package provides a working Android vendor image for
  Waydroid.
+
+Package: waydroid-vendor-28
+Architecture: any
+Depends: ${misc:Depends}
+Provides: waydroid-vendor-image
+Description: Waydroid Vendor Image - gsi-28
+ This package provides a working Android vendor image for
+ Waydroid.

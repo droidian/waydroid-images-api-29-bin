@@ -30,11 +30,21 @@ if [ $UNAME_ARCH == "i686" ]; then
     ARCH="x86"
 fi
 
-DOWNLOAD_URL="https://build.lolinet.com/file/lineage/anbox_${ARCH}/latest-raw-images.zip"
+SYSTEM_DOWNLOAD_URL=`python3 getlatest.py system ${ARCH}`
+VENDOR9_DOWNLOAD_URL=`python3 getlatest.py vendor ${ARCH} HALIUM_9`
+VENDOR10_DOWNLOAD_URL=`python3 getlatest.py vendor ${ARCH} HALIUM_10`
 
 rm -rf downloaded_artifacts
-mkdir -p downloaded_artifacts
+mkdir -p downloaded_artifacts/halium9
+mkdir -p downloaded_artifacts/halium10
+mkdir -p downloaded_artifacts/system
 
-wget "${DOWNLOAD_URL}"
-unzip latest-raw-images.zip -d "${PWD}/downloaded_artifacts"
-rm -rf latest-raw-images.zip
+wget "${SYSTEM_DOWNLOAD_URL}" -O system.zip
+wget "${VENDOR9_DOWNLOAD_URL}" -O vendor9.zip
+wget "${VENDOR10_DOWNLOAD_URL}" -O vendor10.zip
+
+unzip system.zip -d "${PWD}/downloaded_artifacts/system"
+unzip vendor9.zip -d "${PWD}/downloaded_artifacts/halium9"
+unzip vendor10.zip -d "${PWD}/downloaded_artifacts/halium10"
+
+rm system.zip vendor9.zip vendor10.zip

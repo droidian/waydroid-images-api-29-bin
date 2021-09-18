@@ -1,3 +1,1 @@
-downloaded_artifacts/anbox_*_system.img /var/lib/lxc/waydroid
-
-
+downloaded_artifacts/system/system.img /usr/share/waydroid-extra/images
