@@ -1,4 +1,4 @@
-Source: waydroid-images-api-29-bin
+Source: waydroid-images-bin
 Maintainer: Giuseppe Corti (r3vn) <giuseppe.corti@protonmail.com>
 Section: misc
 Priority: optional
@@ -9,13 +9,22 @@ Standards-Version: 4.5.0.3
 Vcs-Browser: https://github.com/droidian/waydroid-images-gsi-29-bin
 Vcs-Git: https://github.com/droidian/waydroid-images-gsi-29-bin.git
 
-Package: waydroid-system-29
+Package: waydroid-system
 Architecture: any
 Depends: ${misc:Depends}
 Provides: waydroid-system-image
-Description: Waydroid System Image - gsi-29
+Breaks: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
+Replaces: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
+Description: Waydroid System Image
  This package provides a working Android system image for
  Waydroid.
+
+Package: waydroid-system-29
+Architecture: all
+Depends: waydroid-system
+Description: Waydroid System Image -- transitional package
+ This package is a transitional package. Feel free to
+ remove it.
 
 Package: waydroid-vendor-30
 Architecture: any
