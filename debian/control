@@ -17,6 +17,14 @@ Description: Waydroid System Image - gsi-29
  This package provides a working Android system image for
  Waydroid.
 
+Package: waydroid-vendor-30
+Architecture: any
+Depends: ${misc:Depends}
+Provides: waydroid-vendor-image
+Description: Waydroid Vendor Image - gsi-30
+ This package provides a working Android vendor image for
+ Waydroid.
+
 Package: waydroid-vendor-29
 Architecture: any
 Depends: ${misc:Depends}
