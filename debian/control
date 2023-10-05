@@ -13,6 +13,18 @@ Package: waydroid-system
 Architecture: any
 Depends: ${misc:Depends}
 Provides: waydroid-system-image
+Conflicts: waydroid-system-gapps
+Breaks: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
+Replaces: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
+Description: Waydroid System Image
+ This package provides a working Android system image for
+ Waydroid.
+
+Package: waydroid-system-gapps
+Architecture: any
+Depends: ${misc:Depends}
+Provides: waydroid-system-image 
+Conflicts: waydroid-system
 Breaks: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
 Replaces: waydroid-system-29 (<< 10.0.0+r41+lineage20220515+git20221108000000)
 Description: Waydroid System Image

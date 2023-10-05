@@ -5,9 +5,20 @@ import sys
 img = sys.argv[1]
 arch = sys.argv[2]
 
-if (img == "system"):
+if (img == "system_vanilla"):
 
     with open('waydroid_OTA/system/lineage/waydroid_%s/VANILLA.json' % arch) as json_file:
+        data = json.load(json_file)
+
+        for p in data['response']:
+            last=p
+            break
+
+        print(last["url"])
+
+elif (img == "system_gapps"):
+
+    with open('waydroid_OTA/system/lineage/waydroid_%s/GAPPS.json' % arch) as json_file:
         data = json.load(json_file)
 
         for p in data['response']:
