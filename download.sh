@@ -2,7 +2,7 @@
 
 set -e
 
-SUPPORTED_ARCHS="x86_64 aarch64 armv8l"
+SUPPORTED_ARCHS="aarch64 armv8l"
 UNAME_ARCH=`uname -m`
 
 for a in $SUPPORTED_ARCHS; do
