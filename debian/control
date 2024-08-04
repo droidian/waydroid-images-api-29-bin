@@ -19,13 +19,6 @@ Description: Waydroid System Image
  This package provides a working Android system image for
  Waydroid.
 
-Package: waydroid-system-29
-Architecture: all
-Depends: waydroid-system
-Description: Waydroid System Image -- transitional package
- This package is a transitional package. Feel free to
- remove it.
-
 Package: waydroid-vendor-30
 Architecture: any
 Depends: ${misc:Depends}
