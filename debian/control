@@ -22,7 +22,7 @@ Description: Waydroid System Image
 Package: waydroid-vendor-33
 Architecture: arm64 armhf
 Depends: ${misc:Depends}
-Provides: waydroid-vendor-image
+Provides: waydroid-vendor-image, waydroid-vendor-32
 Description: Waydroid Vendor Image - api33 vendor
  This package provides a working Android vendor image for
  Waydroid.
