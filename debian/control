@@ -28,7 +28,7 @@ Description: Waydroid Vendor Image - api33 vendor
  Waydroid.
 
 Package: waydroid-vendor-30
-Architecture: do-not-build
+Architecture: arm64 armhf
 Depends: ${misc:Depends}
 Provides: waydroid-vendor-image
 Description: Waydroid Vendor Image - api30 vendor
@@ -36,7 +36,7 @@ Description: Waydroid Vendor Image - api30 vendor
  Waydroid.
 
 Package: waydroid-vendor-29
-Architecture: do-not-build
+Architecture: arm64 armhf
 Depends: ${misc:Depends}
 Provides: waydroid-vendor-image
 Description: Waydroid Vendor Image - api29 vendor
@@ -44,7 +44,7 @@ Description: Waydroid Vendor Image - api29 vendor
  Waydroid.
 
 Package: waydroid-vendor-28
-Architecture: do-not-build
+Architecture: arm64 armhf
 Depends: ${misc:Depends}
 Provides: waydroid-vendor-image
 Description: Waydroid Vendor Image - api28 vendor
